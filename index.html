@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Atividades - Francisco Rick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portfólio de Atividades</h1>
+        <nav class="menu-principal">
+            <button class="nav-btn ativo-menu" onclick="mudarSecao('inicio')">Início</button>
+            <button class="nav-btn" onclick="mudarSecao('linguagens')">Linguagens</button>
+            <button class="nav-btn" onclick="mudarSecao('matematica')">Matemática</button>
+            <button class="nav-btn" onclick="mudarSecao('humanas')">Humanas</button>
+            <button class="nav-btn" onclick="mudarSecao('natureza')">Natureza</button>
+            <button class="nav-btn" onclick="mudarSecao('modelagem')">Modelagem</button>
+            <button class="nav-btn" onclick="mudarSecao('banco-dados')">Banco de Dados</button>
+            <button class="nav-btn" onclick="mudarSecao('iot')">IoT</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="secao ativa">
+            <h2>Bem-vindo</h2>
+            <div class="perfil">
+                <img src="imagens/inter na sagrada familia.jpeg" alt="Minha Foto" class="foto-perfil">
+                <div class="perfil-texto">
+                    <p>Olá! Sou o Francisco, tenho 18 anos e sou um entusiasta da tecnologia. Atualmente, foco meus estudos na preparação para o curso de Sistemas de Informação na UFSC. Além da programação, sou apaixonado por música, cinema e estratégia. Este portfólio reflete minha jornada acadêmica no SESI SENAI.</p>
+                </div>
+            </div>
+
+            <div class="container-atividades">
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRjuH5UVqqXdXh4hmHQS15vwKwOsUJPAOhq9Q81Vt6v8fhhgby7dQuEeztj_QMhAVeU-G9Y-2NSTNzv/pub?embedded=true" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Meu Currículo</h3>
+                        <p>Meu currículo profissional atualizado.</p>
+                        <a href="https://docs.google.com/document/d/e/2PACX-1vRjuH5UVqqXdXh4hmHQS15vwKwOsUJPAOhq9Q81Vt6v8fhhgby7dQuEeztj_QMhAVeU-G9Y-2NSTNzv/pub" target="_blank" class="btn-trabalho">Abrir Currículo</a>
+                    </div>
+                </div>
+
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <div class="aviso-link">Google Sites (Bloqueio de Embed)</div>
+                    </div>
+                    <div class="info-box">
+                        <h3>Portfólio 2025</h3>
+                        <p>Histórico de projetos e evoluções de 2025.</p>
+                        <a href="https://sites.google.com/estudante.sesisenai.org.br/portfolio-francisco-rick?usp=sharing" target="_blank" class="btn-trabalho">Acessar Site Externo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="linguagens" class="secao">
+            <h2>Linguagens, Códigos e suas Tecnologias</h2>
+            <div class="abas-trimestre">
+                <button class="aba-btn ativa" onclick="mudarTrimestre('linguagens', 1, this)">1º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('linguagens', 2, this)">2º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('linguagens', 3, this)">3º Tri</button>
+            </div>
+            
+            <div id="linguagens-tri1" class="conteudo-trimestre ativo">
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://www.canva.com/design/DAHH-xm-ueU/S6CKBab3ebgtYrSEcap6Dg/view?embed" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Trabalho: Explicar G.H.</h3>
+                        <p><strong>Trabalho:</strong> “Explicar G.H.: entre o corpo e a sociedade”</p>
+                        <p><strong>Habilidades Avaliadas:</strong> H4 e H22</p>
+                        <p><strong>Minha Crítica:</strong> Ler Clarice Lispector é uma viagem. É doido ver como ela desconstrói a sociedade e o próprio corpo. A atividade foi massa para entender que a literatura vai muito além da narrativa superficial.</p>
+                    </div>
+                </div>
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <div class="aviso-link">Wordwall (Somente Link)</div>
+                    </div>
+                    <div class="info-box">
+                        <h3>Game Literário: Arcadismo</h3>
+                        <p><strong>Atividade:</strong> Game literário sobre Arcadismo.</p>
+                        <p><strong>Habilidade trabalhada:</strong> H15</p>
+                        <a href="https://wordwall.net/pt/resource/108609457/arcadismo-da-claudia" target="_blank" class="btn-trabalho">Jogar Agora</a>
+                    </div>
+                </div>
+            </div>
+            <div id="linguagens-tri2" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+            <div id="linguagens-tri3" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+        </section>
+
+        <section id="matematica" class="secao">
+            <h2>Matemática e suas Tecnologias</h2>
+            <div class="abas-trimestre">
+                <button class="aba-btn ativa" onclick="mudarTrimestre('matematica', 1, this)">1º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('matematica', 2, this)">2º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('matematica', 3, this)">3º Tri</button>
+            </div>
+            <div id="matematica-tri1" class="conteudo-trimestre ativo">
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQXPs2E6S8NxFhHGTYFbb1DA-C00sOccloD4-rWlaMFSvFnhY__1iLXrg8tC-JlXYjtpwLFwO-go1so/pub?embedded=true" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Atividade Filme Quebrando a Banca</h3>
+                        <p>Perguntas específicas sobre o filme, junto com escrever um roteiro sobre um filme de Hollywood que tenha um assunto da matemática em sua produção.</p>
+                        <p><strong>Competências e habilidades trabalhadas:</strong> C5, H30 e H31.</p>
+                    </div>
+                </div>
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQH9Kk5qhCOn_4GInkGYcATBlR-WI0_cgpPx6t5iuBN4QBU58oTe--EXX1yoQ63WNtS_M8qYTwh8QlQ/pub?embedded=true" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Jogo Quebrando a Banca</h3>
+                        <p>Desenvolver um jogo original utilizando os conceitos de análise combinatória e teoria das probabilidades, inspirado no filme Quebrando a Banca.</p>
+                        <p><strong>Competências e Habilidades:</strong> C5, H30 e H31</p>
+                    </div>
+                </div>
+            </div>
+            <div id="matematica-tri2" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+            <div id="matematica-tri3" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+        </section>
+
+        <section id="humanas" class="secao">
+            <h2>Ciências Humanas e Sociais Aplicadas</h2>
+            <div class="abas-trimestre">
+                <button class="aba-btn ativa" onclick="mudarTrimestre('humanas', 1, this)">1º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('humanas', 2, this)">2º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('humanas', 3, this)">3º Tri</button>
+            </div>
+            <div id="humanas-tri1" class="conteudo-trimestre ativo">
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTt1dt3iOy3ZTboyjNcXPZvsCE21CwF0S87JThXhGW8vHc9h8X0C9aC7sx8M7VfOYx5Bv5E0niScKWc/pub?embedded=true" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Revolução Russa - Karl Marx, teoria marxista e os marxismos do século XX</h3>
+                        <p>Pesquisei na internet o contexto e utilizei a I.A para que traduzisse as escritas em russo, essa imagem, dentre as que achei, foi a que mais me chamou atenção, a atividade me deu uma contextualização sobre a época, muito melhor do que a que eu tinha.</p>
+                        <p><strong>Habilidades:</strong> As habilidades relacionadas não estão presentes na postagem da atividade.</p>
+                    </div>
+                </div>
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://www.canva.com/design/DAHG0zFaGGM/YmL2snOXYNs9Lbf5jGCVJg/view?embed" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>A Grande Guerra</h3>
+                        <p>Pesquisamos imagens e informações da época, e utilizamos o canva para recriar um jornal da época, era nossa AV2 e pesquisando, aprendi coisas e detalhes sobre a primeira guerra mundial, que até então eu desconhecia.</p>
+                        <p><strong>Competências e habilidades:</strong> C3, H15, H16, H20, C6 e H39.</p>
+                    </div>
+                </div>
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://www.canva.com/design/DAHCVD2DfYE/sUg0QJKdVQo_ZCQl1OJk_w/view?embed" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Geopolítica</h3>
+                        <p>Pesquisamos e estudamos cada área solicitada, escolhemos a Itália por ser um país muito rico culturalmente, gostei muito de apronfundar meus conhecimentos sobre as informações e estatísticas do país.</p>
+                        <p><strong>Competências e habilidades:</strong> C1, H1, H2, H3, H4 e H5.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="humanas-tri2" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+            <div id="humanas-tri3" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+        </section>
+
+        <section id="natureza" class="secao">
+            <h2>Ciências da Natureza e suas Tecnologias</h2>
+            <div class="abas-trimestre">
+                <button class="aba-btn ativa" onclick="mudarTrimestre('natureza', 1, this)">1º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('natureza', 2, this)">2º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('natureza', 3, this)">3º Tri</button>
+            </div>
+            <div id="natureza-tri1" class="conteudo-trimestre ativo">
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSuXc2zl54Cer9MOZbC_zTyBj00ph5CO3OrQ1HrPFURQewmWAiY7p9I0jKhSgFI_DphRJagKjkvh8EU/pub?embedded=true" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Descrição:</h3>
+                        <p>1. Descrição:<br>
+                        O meme apresenta três cientistas surpresos ao notar que o braço humano, a asa de morcego e a nadadeira de baleia possuem a mesma estrutura óssea, apesar de suas aparências e funções serem completamente diferentes.<br>
+                        2. Conceitos Biológicos:<br><br>
+                        <strong>Órgãos Homólogos:</strong> Estruturas com a mesma origem embrionária e arquitetura básica que revelam um parentesco entre as espécies.<br>
+                        <strong>Irradiação Adaptativa:</strong> Processo onde um ancestral comum dá origem a diferentes linhagens, cada uma adaptada a um ambiente (terrestre, aéreo ou aquático).<br>
+                        <strong>Divergência Evolutiva:</strong> A evolução "remodelou" o membro original para funções distintas (segurar, voar e nadar) conforme a necessidade de sobrevivência de cada grupo.</p>
+                        <p><strong>Competências e habilidades:</strong> C3, H15 e H18.</p>
+                    </div>
+                </div>
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://www.canva.com/design/DAHH_VaXFFY/LnHgBKaAj17dFGg-vKNE5A/view?embed" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Se já sabemos que os combustíveis fosseis poluem, por que ainda usamos?</h3>
+                        <p><strong>Competências e habilidades:</strong> C1, H1, C2, H9 e H11</p>
+                    </div>
+                </div>
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSZ9WhdmxG8AEdbULdy6byWfQaj1YenU1KQP4mNa35fIvUJ0jixZG7dwvRAUD2SUyDNv9qVC254LiIY/pub?embedded=true" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Relatório da atividade prática disputa de eletricidade.</h3>
+                        <p><strong>Competências e habilidades:</strong> C1, H1, C2, H7, H9, H11 e H12</p>
+                    </div>
+                </div>
+            </div>
+            <div id="natureza-tri2" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+            <div id="natureza-tri3" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+        </section>
+
+        <section id="modelagem" class="secao">
+            <h2>Modelagem de Sistemas</h2>
+            <div class="abas-trimestre">
+                <button class="aba-btn ativa" onclick="mudarTrimestre('modelagem', 1, this)">1º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('modelagem', 2, this)">2º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('modelagem', 3, this)">3º Tri</button>
+            </div>
+            <div id="modelagem-tri1" class="conteudo-trimestre ativo">
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRdZnT9xV3tcwAzXBnY4fQ8mWQi1-gEiO72i4wGIpdKY28uIxnpZ2Db9EPrL0LPBKmYlCpurcCOqMdd/pub?embedded=true" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Documento Grand Prix.</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="modelagem-tri2" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+            <div id="modelagem-tri3" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+        </section>
+
+        <section id="banco-dados" class="secao">
+            <h2>Banco de Dados</h2>
+            <div class="abas-trimestre">
+                <button class="aba-btn ativa" onclick="mudarTrimestre('banco-dados', 1, this)">1º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('banco-dados', 2, this)">2º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('banco-dados', 3, this)">3º Tri</button>
+            </div>
+            <div id="banco-dados-tri1" class="conteudo-trimestre ativo">
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRdZnT9xV3tcwAzXBnY4fQ8mWQi1-gEiO72i4wGIpdKY28uIxnpZ2Db9EPrL0LPBKmYlCpurcCOqMdd/pub?embedded=true" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Documento Grand Prix.</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="banco-dados-tri2" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+            <div id="banco-dados-tri3" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+        </section>
+
+        <section id="iot" class="secao">
+            <h2>IoT</h2>
+            <div class="abas-trimestre">
+                <button class="aba-btn ativa" onclick="mudarTrimestre('iot', 1, this)">1º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('iot', 2, this)">2º Tri</button>
+                <button class="aba-btn" onclick="mudarTrimestre('iot', 3, this)">3º Tri</button>
+            </div>
+            <div id="iot-tri1" class="conteudo-trimestre ativo">
+                <div class="card-atividade">
+                    <div class="midia-box">
+                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRdZnT9xV3tcwAzXBnY4fQ8mWQi1-gEiO72i4wGIpdKY28uIxnpZ2Db9EPrL0LPBKmYlCpurcCOqMdd/pub?embedded=true" class="frame-incorporado"></iframe>
+                    </div>
+                    <div class="info-box">
+                        <h3>Documento Grand Prix.</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="iot-tri2" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+            <div id="iot-tri3" class="conteudo-trimestre">
+                <div class="card-atividade"><div class="info-box"><p>Aguardando...</p></div></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

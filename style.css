@@ -1,0 +1,239 @@
+/* RESET E BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(180deg, #1a0000 0%, #0d0d0d 100%);
+    padding: 30px 20px;
+    border-bottom: 1px solid #330000;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.menu-principal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-btn {
+    background: transparent;
+    color: #999;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+
+.nav-btn:hover {
+    color: #fff;
+    border-color: #800000;
+}
+
+.nav-btn.ativo-menu {
+    background: #800000;
+    color: #fff;
+    border-color: #800000;
+}
+
+/* MAIN */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.secao {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.secao.ativa {
+    display: block;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #800000;
+    margin-bottom: 30px;
+    border-left: 5px solid #800000;
+    padding-left: 15px;
+}
+
+/* PERFIL */
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #161616;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px solid #222;
+}
+
+.foto-perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 4px solid #800000;
+    flex-shrink: 0;
+}
+
+.perfil-texto {
+    flex: 1;
+}
+
+/* CARDS DE ATIVIDADE */
+.card-atividade {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #161616;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #222;
+    padding: 20px;
+}
+
+.midia-box {
+    flex: 1.2;
+    min-width: 400px;
+}
+
+.frame-incorporado {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.info-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-box h3 {
+    color: #800000;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.info-box p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.info-box strong {
+    color: #fff;
+}
+
+/* BOTÕES E LINKS */
+.btn-trabalho {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #800000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-trabalho:hover {
+    background: #a00000;
+}
+
+.aviso-link {
+    height: 350px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+/* ABAS */
+.abas-trimestre {
+    margin-bottom: 25px;
+}
+
+.aba-btn {
+    background: transparent;
+    border: none;
+    color: #666;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.aba-btn.ativa {
+    color: #800000;
+    border-bottom-color: #800000;
+}
+
+/* CONTEÚDO TRIMESTRE */
+.conteudo-trimestre {
+    display: none;
+}
+
+.conteudo-trimestre.ativo {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 850px) {
+    .card-atividade {
+        flex-direction: column;
+    }
+    .midia-box {
+        min-width: 100%;
+    }
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+}
