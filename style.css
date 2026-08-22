@@ -224,6 +224,40 @@ h2 {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* GALERIA DE FOTOS (2 IMAGENS POR ATIVIDADE) */
+.galeria-dupla {
+    display: flex;
+    gap: 10px;
+}
+
+.galeria-dupla img {
+    width: 50%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.midia-box img.foto-unica {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    display: block;
+}
+
+.midia-box img.foto-integral {
+    width: 100%;
+    max-height: 450px;
+    aspect-ratio: unset;
+    object-fit: contain;
+    background: #1c1c1c;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
 /* RESPONSIVIDADE */
 @media (max-width: 850px) {
     .card-atividade {
@@ -235,5 +269,12 @@ h2 {
     .perfil {
         flex-direction: column;
         text-align: center;
+    }
+    .galeria-dupla {
+        flex-direction: column;
+    }
+    .galeria-dupla img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
     }
 }
